@@ -1,0 +1,60 @@
+.categories-section {
+  .section-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .category-card,
+  .restaurant-card {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #eee;
+    }
+
+    .category-info {
+      background-color: #03081F;
+      padding: 10px;
+
+      .category-name {
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+      }
+
+      .category-count {
+        font-size: 0.8rem;
+        color: #ccc;
+        margin: 0;
+      }
+    }
+
+    .restaurant-info {
+      background-color: #fc8a06;
+      padding: 10px;
+
+      .restaurant-name {
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+      }
+
+      .restaurant-count {
+        font-size: 0.8rem;
+        color: #fff;
+        margin: 0;
+      }
+    }
+  }
+}

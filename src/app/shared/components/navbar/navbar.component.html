@@ -1,0 +1,71 @@
+<!-- Top Bar -->
+<div class="top-bar py-2 bg-light border-bottom small text-secondary">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            ✨ <span class="fw-semibold">Get 5% off your first order.</span>
+            Promo: <span class="text-warning fw-bold">ORDER5</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+            <div>
+                📍 Regent Street, A4, A250, London —
+                <a href="#" class="change-location">Change Location</a>
+            </div>
+            <button class="cart-button btn btn-success d-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+                <img src="../../../../assets/images/Full Shopping Basket.png" alt="Full Shopping Basket" />
+                <span>23 Items</span>
+                <span>GBP 79.49</span>
+                <img src="../../../../assets/images/Forward Button.png" alt="Forward Button" />
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-1" href="#">
+            <img src="../../../../assets/images/logo.png" alt="Logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto gap-3">
+                <li class="nav-item" routerLinkActive="active-tab" [routerLinkActiveOptions]="{ exact: true }">
+                    <a class="nav-link fw-semibold text-dark" routerLink="/home">Home</a>
+                    <div class="nav-active-indicator"></div>
+                </li>
+                <li class="nav-item" routerLinkActive="active-tab">
+                    <a class="nav-link fw-semibold text-dark" routerLink="/menu">Browse Menu</a>
+                    <div class="nav-active-indicator"></div>
+                </li>
+                <li class="nav-item" routerLinkActive="active-tab">
+                    <a class="nav-link fw-semibold text-dark" routerLink="/offers">Special Offers</a>
+                    <div class="nav-active-indicator"></div>
+                </li>
+                <li class="nav-item" routerLinkActive="active-tab">
+                    <a class="nav-link fw-semibold text-dark" routerLink="/restaurants">Restaurants</a>
+                    <div class="nav-active-indicator"></div>
+                </li>
+                <li class="nav-item" routerLinkActive="active-tab">
+                    <a class="nav-link fw-semibold text-dark" routerLink="/track">Track Order</a>
+                    <div class="nav-active-indicator"></div>
+                </li>
+            </ul>
+
+            <!-- Login -->
+            <div>
+
+                <button class="btn btn-dark rounded-pill px-4"><img src="../../../../assets/images/Male User.png"
+                        alt="Male User" />Login / Signup</button>
+            </div>
+
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,42 @@
+<section class="deals-section py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <!-- Section Title -->
+            <h2 class="section-title mb-4">
+                Up to <span class="discount">~40%</span> 🐵 Order.uk exclusive deals
+            </h2>
+
+            <!-- Filter Pills -->
+            <ul class="filter-list list-unstyled d-flex gap-3 mb-5">
+                <li><button class="filter-pill">Vegan</button></li>
+                <li><button class="filter-pill">Sushi</button></li>
+                <li><button class="filter-pill active">Pizza & Fast food</button></li>
+                <li><button class="filter-pill">Others</button></li>
+            </ul>
+        </div>
+
+        <!-- Restaurant Cards -->
+        <div class="row gy-4">
+            <div class="col-md-4" *ngFor="let card of [1, 2, 3]">
+                <div class="restaurant-card position-relative">
+                    <!-- الصورة الأساسية -->
+                    <img src="assets/images/deals1.png" class="img-fluid main-image" alt="Restaurant" />
+
+                    <!-- صورة overlay (شفافة) فوقها -->
+                    <img src="assets/images/overlay.png" class="overlay-image" alt="Overlay" />
+
+                    <!-- خصم -->
+                    <span class="discount-badge">-40%</span>
+
+                    <!-- الكلام -->
+                    <div class="card-info">
+                        <p class="category">Restaurant</p>
+                        <h5 class="name">Yum Pizza House</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

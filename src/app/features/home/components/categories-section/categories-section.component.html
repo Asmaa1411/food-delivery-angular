@@ -1,0 +1,37 @@
+<section class="categories-section py-5">
+  <div class="container">
+    <!-- Title -->
+    <h4 class="section-title mb-4">
+      Order.uk Popular Categories <span>🤩</span>
+    </h4>
+
+    <!-- Categories Cards -->
+    <div class="row g-3 mb-5">
+      <div class="col-6 col-md-4 col-lg-2" *ngFor="let category of categories">
+        <div class="category-card">
+          <img [src]="category.image" class="img-fluid" alt="Category" />
+          <div class="category-info">
+            <p class="category-name">{{ category.name }}</p>
+            <p class="category-count">{{ category.count }} Restaurants</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Restaurants Title -->
+    <h4 class="section-title mb-4">Popular Restaurants</h4>
+
+    <!-- Restaurants Cards -->
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2" *ngFor="let restaurant of restaurants">
+        <div class="restaurant-card">
+          <img [src]="restaurant.image" class="img-fluid" alt="Restaurant" />
+          <div class="restaurant-info">
+            <p class="restaurant-name">{{ restaurant.name }}</p>
+            <!-- <p class="restaurant-count">{{ restaurant.branches }} Branches</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
