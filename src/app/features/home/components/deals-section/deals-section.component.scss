@@ -94,4 +94,74 @@
         }
     }
 
+    @media (max-width: 991.98px) {
+        .deals-section {
+            .section-title {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            .filter-list {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+
+
+
+                .filter-pill {
+                    padding: 6px 14px;
+                    font-size: 14px;
+                }
+            }
+
+            .restaurant-card {
+                .card-info {
+                    bottom: 20px;
+                    left: 20px;
+
+                    .name {
+                        font-size: 1rem;
+                    }
+
+                    .category {
+                        font-size: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .deals-section {
+            .section-title {
+                font-size: 1.2rem;
+            }
+
+            .restaurant-card {
+                .discount-badge {
+                    top: 8px;
+                    right: 12px;
+                    padding: 6px 10px;
+                    font-size: 0.75rem;
+                }
+
+                .card-info {
+                    bottom: 16px;
+                    left: 16px;
+
+                    .name {
+                        font-size: 0.95rem;
+                    }
+
+                    .category {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
 }

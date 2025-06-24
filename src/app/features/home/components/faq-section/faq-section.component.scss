@@ -1,0 +1,118 @@
+.faq-section {
+    .bg {
+        background-color: #d9d9d9;
+        border-radius: 12px;
+    }
+    .section-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-btn {
+        background: transparent;
+        border: 1px solid #FC8A06;
+        ;
+        border-radius: 120px;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000;
+        transition: all 0.3s ease;
+    }
+
+    .nav-btn.active {
+        background-color: #FC8A06;
+
+        color: #fff;
+    }
+
+    .faq-card {
+        background-color: #03081F;
+        ;
+        border-radius: 12px;
+
+        .question-list {
+            color: #fff;
+            border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+            ;
+
+
+            ul {
+                li {
+                    padding: 8px 0;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+
+            .question-btn {
+                background-color: #fc8a06;
+                color: #000;
+                border-radius: 120px;
+                font-weight: 700;
+                font-size: 18px;
+                padding: 12px 40px;
+                border: none;
+
+                &.active {
+                    background-color: #fc8a06;
+                }
+            }
+        }
+
+        .steps-area {
+            .step-card {
+                background-color: #d9d9d9;
+                height: 100%;
+
+                h6 {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .footer-text {
+                color: #ccc;
+                font-size: 16px;
+                max-width: 90%;
+                font-weight: 400;
+                margin: auto;
+            }
+        }
+    }
+
+    .stats-box {
+        background-color: #fc8a06;
+        border-radius: 12px;
+
+        .stat-item {
+            text-align: center;
+
+            p {
+                font-size: 64px;
+                margin-bottom: 4px;
+                font-weight: 300;
+            }
+
+            small {
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+
+        .divider {
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.4);
+            margin: auto 12px;
+        }
+    }
+
+}

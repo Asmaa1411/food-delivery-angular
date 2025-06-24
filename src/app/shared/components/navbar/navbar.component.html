@@ -1,24 +1,25 @@
 <!-- Top Bar -->
-<div class="top-bar py-2 bg-light border-bottom small text-secondary">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div>
-            ✨ <span class="fw-semibold">Get 5% off your first order.</span>
-            Promo: <span class="text-warning fw-bold">ORDER5</span>
-        </div>
-        <div class="d-flex align-items-center gap-3">
-            <div>
-                📍 Regent Street, A4, A250, London —
-                <a href="#" class="change-location">Change Location</a>
-            </div>
-            <button class="cart-button btn btn-success d-flex align-items-center gap-2 px-3 py-2 rounded-pill">
-                <img src="../../../../assets/images/Full Shopping Basket.png" alt="Full Shopping Basket" />
-                <span>23 Items</span>
-                <span>GBP 79.49</span>
-                <img src="../../../../assets/images/Forward Button.png" alt="Forward Button" />
-            </button>
-        </div>
+<div class="top-bar py-2 bg-light border-bottom small text-secondary d-none d-lg-block">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      ✨ <span class="fw-semibold">Get 5% off your first order.</span>
+      Promo: <span class="text-warning fw-bold">ORDER5</span>
     </div>
+    <div class="d-flex align-items-center gap-3">
+      <div>
+        📍 Regent Street, A4, A250, London —
+        <a href="#" class="change-location">Change Location</a>
+      </div>
+      <button class="cart-button btn btn-success d-flex align-items-center gap-2 px-3 py-2 rounded-pill">
+        <img src="../../../../assets/images/Full Shopping Basket.png" alt="Full Shopping Basket" />
+        <span>23 Items</span>
+        <span>GBP 79.49</span>
+        <img src="../../../../assets/images/Forward Button.png" alt="Forward Button" />
+      </button>
+    </div>
+  </div>
 </div>
+
 
 <!-- Main Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
@@ -68,4 +69,18 @@
 
         </div>
     </div>
+    <!-- Top Info for Mobile -->
+<div class="d-flex d-lg-none w-100">
+  <div class="d-flex flex-column flex-grow-1" style="background-color: #fc8a06;">
+    <div class="d-flex align-items-center gap-2 p-2">
+      <img src="assets/images/user.png" alt="User" class="rounded-circle" style="width: 32px; height: 32px;" />
+      <span class="text-white fw-semibold">Aycan</span>
+    </div>
+  </div>
+  <div class="d-flex align-items-center justify-content-between px-3 flex-grow-1" style="background-color: #028643;">
+        <img src="../../../../assets/images/Full Shopping Basket.png" alt="Full Shopping Basket" width="24px" />
+    <span class="text-white fw-semibold">GBP 79.89</span>
+  </div>
+</div>
+
 </nav>

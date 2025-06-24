@@ -1,0 +1,44 @@
+.site-footer {
+  background-color: #D9D9D9;
+  font-family: 'Poppins', sans-serif;
+
+  img {
+    max-width: 140px;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  a {
+    color: #000;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  input[type="email"] {
+    border-radius: 50px;
+  }
+
+  .btn-warning {
+    background-color: #fc8a06;
+    border-radius: 50px;
+  }
+
+  .social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .footer-bottom {
+    background-color: #03081f;
+
+    a {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}
