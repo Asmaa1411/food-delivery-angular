@@ -1,0 +1,31 @@
+.product-card {
+  .content {
+    width: 60%;
+  }
+
+  .image-box {
+    width: 100px;
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+.plus-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 50% 0 0;
+    width: 46px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    padding: 2;
+    opacity: 90%;
+}
+  }
+}

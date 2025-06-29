@@ -1,0 +1,54 @@
+.restaurant-offers-section {
+    .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .search-wrapper {
+        position: relative;
+
+        .form-control {
+            border: 1px solid #03081F;
+            width: 240px;
+            font-size: 18px;
+            border-radius: 120px;
+            padding-left: 2.2rem;
+            font-weight: 600;
+            opacity: 60%;
+
+        }
+
+        .search-icon {
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #03081F;
+            opacity: 60%;
+        }
+    }
+
+    .filter-bar {
+        background-color: #FC8A06;
+
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+
+        .btn-link {
+            color: #000;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .btn-dark {
+            background-color: #03081f;
+            border: none;
+        }
+    }
+}

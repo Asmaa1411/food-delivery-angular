@@ -1,0 +1,15 @@
+<div class="restaurant-card position-relative">
+  <img [src]="image" class="img-fluid main-image" alt="Restaurant" />
+  <img src="assets/images/overlay.png" class="overlay-image" alt="Overlay" />
+  <span class="discount-badge">{{ discount }}</span>
+
+  <div class="card-info">
+    <p class="category">{{ category }}</p>
+    <h5 class="name">{{ name }}</h5>
+  </div>
+
+<button *ngIf="showButton" class="plus-btn position-absolute">
+  <img src="../../../../assets/images/Plus.png" alt="plus icon" />
+</button>
+
+</div>

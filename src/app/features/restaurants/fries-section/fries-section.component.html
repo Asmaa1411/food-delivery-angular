@@ -1,0 +1,16 @@
+<section class="burgers-section py-5">
+  <div class="container">
+    <h2 class="section-title mb-4">Fries</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let item of fries">
+        <app-product-card
+          [name]="item.name"
+          [description]="item.description"
+          [price]="item.price"
+          [image]="item.image"
+        ></app-product-card>
+      </div>
+    </div>
+  </div>
+</section>

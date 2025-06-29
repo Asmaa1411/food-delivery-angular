@@ -1,0 +1,45 @@
+<section class="restaurant-offers-section py-5">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start mb-5">
+      <h2 class="section-title mb-3 mb-md-0">
+        All Offers from McDonald’s East London
+      </h2>
+
+<div class="search-wrapper mt-3 mt-md-0 position-relative">
+  <input
+    type="text"
+    class="form-control rounded-pill ps-5 pe-4 py-2"
+    placeholder="Search from menu..."
+  />
+  <i class="bi bi-search search-icon position-absolute"></i>
+</div>
+
+    </div>
+
+    <div class="filter-bar bg-warning px-3 py-2 rounded-pill d-flex flex-wrap gap-3 mb-5">
+      <button class="btn btn-dark btn-sm rounded-pill px-3">Offers</button>
+      <button class="btn btn-link text-dark">Burgers</button>
+      <button class="btn btn-link text-dark">Fries</button>
+      <button class="btn btn-link text-dark">Snacks</button>
+      <button class="btn btn-link text-dark">Salads</button>
+      <button class="btn btn-link text-dark">Cold drinks</button>
+      <button class="btn btn-link text-dark">Happy Meal®</button>
+      <button class="btn btn-link text-dark">Desserts</button>
+      <button class="btn btn-link text-dark">Hot drinks</button>
+      <button class="btn btn-link text-dark">Sauces</button>
+      <button class="btn btn-link text-dark">Orbit®</button>
+    </div>
+
+    <div class="row gy-4">
+      <div class="col-12 col-sm-6 col-md-4" *ngFor="let card of cards">
+        <app-restaurant-card
+        [image]="card.image"
+        [discount]="card.discount"
+        [category]="card.category"
+        [name]="card.name"
+        [showButton]="true"
+        ></app-restaurant-card>
+      </div>
+    </div>
+  </div>
+</section>

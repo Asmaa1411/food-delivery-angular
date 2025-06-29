@@ -1,0 +1,108 @@
+<section class="customer-reviews-section py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-5 fw-bold">Customer Reviews</h2>
+
+    <!-- Carousel -->
+    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="card p-3">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="assets/images/customer.png" class="rounded-circle me-3" width="40" height="40" />
+                  <div>
+                    <p class="mb-0 fw-bold">St Gix</p>
+                    <small class="text-warning">South London</small>
+                  </div>
+                  <div class="ms-auto text-end">
+                    <div class="text-warning small">
+                      ⭐ ⭐ ⭐ ⭐ ⭐
+                    </div>
+                    <small class="text-muted">24th September, 2023</small>
+                  </div>
+                </div>
+                <p class="mb-0 text-muted">
+                  The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
+                </p>
+              </div>
+            </div>
+
+            <!-- Copy same column for second and third review -->
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card p-3">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="assets/images/customer.png" class="rounded-circle me-3" width="40" height="40" />
+                  <div>
+                    <p class="mb-0 fw-bold">St Gix</p>
+                    <small class="text-warning">South London</small>
+                  </div>
+                  <div class="ms-auto text-end">
+                    <div class="text-warning small">
+                      ⭐ ⭐ ⭐ ⭐ ⭐
+                    </div>
+                    <small class="text-muted">24th September, 2023</small>
+                  </div>
+                </div>
+                <p class="mb-0 text-muted">
+                  The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 d-none d-md-block">
+              <div class="card p-3">
+                <div class="d-flex align-items-center mb-3">
+                  <img src="assets/images/customer.png" class="rounded-circle me-3" width="40" height="40" />
+                  <div>
+                    <p class="mb-0 fw-bold">St Gix</p>
+                    <small class="text-warning">South London</small>
+                  </div>
+                  <div class="ms-auto text-end">
+                    <div class="text-warning small">
+                      ⭐ ⭐ ⭐ ⭐ ⭐
+                    </div>
+                    <small class="text-muted">24th September, 2023</small>
+                  </div>
+                </div>
+                <p class="mb-0 text-muted">
+                  The positive aspect was undoubtedly the efficiency of the service. The queue moved quickly, the staff was friendly, and the food was up to the usual McDonald's standard – hot and satisfying.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-warning rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-warning rounded-circle"></span>
+      </button>
+    </div>
+
+    <!-- Rating summary -->
+    <div class="text-center mt-5">
+      <img src="assets/images/rate.png" width="80" class="mb-2" />
+    </div>
+  </div>
+</section>
+<section class="restaurant-section py-5">
+    <h4 class="section-title mb-4">Similar Restaurants</h4>
+
+    <!-- Restaurants Cards -->
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-2" *ngFor="let restaurant of restaurants">
+        <div class="restaurant-card">
+          <img [src]="restaurant.image" class="img-fluid" alt="Restaurant" />
+          <div class="restaurant-info">
+            <p class="restaurant-name">{{ restaurant.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>

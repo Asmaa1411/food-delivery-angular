@@ -7,7 +7,7 @@
 
   .cart-button {
     background-color: #028643;
-;
+    ;
     border: none;
 
     .badge {
@@ -31,12 +31,12 @@
 
     &.active-tab {
       .nav-active-indicator {
-        width: 127px;
+        width: 120px;
         height: 45px;
         background-color: #fc8a06;
         border-radius: 120px;
         position: absolute;
-        top: -12px;
+        top: -2px;
         left: -10px;
         z-index: -1;
       }
@@ -47,6 +47,7 @@
     font-weight: 500;
   }
 }
+
 @media (max-width: 767.98px) {
   .navbar-nav {
     flex-direction: column !important;

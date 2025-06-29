@@ -1,0 +1,57 @@
+.location-info-section {
+  .map-wrapper {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img {
+      border-radius: 0.5rem;
+      display: block;
+    }
+
+    .info-box {
+      background-color: #03081f;
+      max-width: 300px;
+      padding: 80px 40px;
+      top: 50px;
+      left: 100px;
+      z-index: 2;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+      .restaurant-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        span {
+          color: #fc8a06;
+        }
+      }
+
+      .address {
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+      }
+
+      a {
+        color: #fc8a06;
+        word-break: break-word;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .map-wrapper {
+      .info-box {
+        top: 20px;
+        left: 20px;
+        padding: 1rem;
+        max-width: 90%;
+      }
+    }
+  }
+}

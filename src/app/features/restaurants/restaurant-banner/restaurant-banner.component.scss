@@ -1,0 +1,67 @@
+.restaurant-hero {
+  .hero-box {
+background: linear-gradient(rgba(3, 8, 31, 0.9), rgba(3, 8, 31, 0.9)),
+            url('../../../../assets/images/restaurant1.png') no-repeat center center / cover;
+color: #ffffff;
+border-radius: 1.5rem;
+
+
+
+
+    .slogan {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .restaurant-name {
+      font-weight: 700;
+      font-size: 1.75rem;
+      color: #ffffff;
+    }
+
+    .info-pill {
+      background-color: #ffffff1a;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.875rem;
+
+      i {
+        color: #fc8a06;
+      }
+    }
+
+    .open-btn {
+      background-color: #fc8a06;
+      border: none;
+      font-size: 0.875rem;
+    }
+
+    .image-content {
+      position: relative;
+
+      .burger-img {
+        border-radius: 0.75rem;
+      }
+
+      .rating-box {
+    position: absolute;
+    bottom: -41px;
+    left: -75px;
+
+
+        .rating-value {
+          font-size: 1.2rem;
+        }
+
+        .rating-stars {
+          font-size: 0.75rem;
+          letter-spacing: 2px;
+        }
+
+        .rating-count {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

@@ -17,23 +17,18 @@
         </div>
 
         <!-- Restaurant Cards -->
-        <div class="row gy-4">
-            <div class="col-12 col-sm-6 col-md-4" *ngFor="let card of [1, 2, 3]">
-                <div class="restaurant-card position-relative">
-                    <img src="assets/images/deals1.png" class="img-fluid main-image" alt="Restaurant" />
-
-                    <img src="assets/images/overlay.png" class="overlay-image" alt="Overlay" />
-
-                    <span class="discount-badge">-40%</span>
-
-                    <div class="card-info">
-                        <p class="category">Restaurant</p>
-                        <h5 class="name">Yum Pizza House</h5>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-sm-6 col-md-4" *ngFor="let card of cards">
+        <app-restaurant-card
+          [image]="card.image"
+          [discount]="card.discount"
+          [category]="card.category"
+          [name]="card.name"
+        ></app-restaurant-card>
+      </div>
+    </div>
+  </div>
 
     </div>
 </section>

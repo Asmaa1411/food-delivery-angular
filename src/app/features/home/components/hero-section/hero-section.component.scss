@@ -1,10 +1,11 @@
 .hero-section {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
   position: relative;
-  
+
   .hero-background {
-      background-color: #03081F;
+    background-color: #03081F;
   }
+
   .sub-heading {
     font-size: 0.9rem;
     color: #888;
@@ -20,53 +21,59 @@
     }
   }
 
-.search-wrapper {
-display: flex;
-  flex-direction: column;
-  align-items: center; 
-  color: #888;
-  .search-label {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 8px;
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888;
+
+    .search-label {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .search-box {
+      width: fit-content;
+
+      .search-input {
+        border-radius: 50px 0 0 50px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+      }
+
+      .search-btn {
+        background-color: #fc8a06;
+        border-radius: 0 50px 50px 0;
+        border: none;
+        font-weight: 700;
+        padding: 10px 30px;
+        white-space: nowrap;
+      }
+
+      input::placeholder {
+        color: #555;
+        font-size: 14px;
+      }
+    }
   }
-
-  .search-box {
-    width: fit-content;
-
-    .search-input {
-      border-radius: 50px 0 0 50px;
-      padding: 10px 20px;
-      border: none;
-      outline: none;
-    }
-
-    .search-btn {
-      background-color: #fc8a06;
-      border-radius: 0 50px 50px 0;
-      border: none;
-      font-weight: 700;
-      padding: 10px 30px;
-      white-space: nowrap;
-    }
-
-    input::placeholder {
-      color: #555;
-      font-size: 14px;
-    }
-  }
-}
 
 
 
   .bg-graphic {
     position: absolute;
     top: 170px;
-    right: 250px;
+    right: 295px;
     z-index: 1;
     width: 100%;
     max-width: 100%;
   }
+
+  .img-fluid {
+    right: 120px;
+  }
+
 
   .order-box {
     position: absolute;
@@ -88,20 +95,21 @@ display: flex;
   }
 
   .order-box-1 {
-    top: 20px;
-    right: 30px;
+    top: 10px;
+    right: 85px;
   }
 
   .order-box-2 {
-    top: 100px;
-    right: 10px;
+    top: 140px;
+    right: 5px;
   }
 
   .order-box-3 {
-    top: 180px;
+    top: 317px;
     right: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .hero-section {
     .hero-background {
