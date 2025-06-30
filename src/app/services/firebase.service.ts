@@ -12,4 +12,9 @@ getRestaurants(): Observable<any[]> {
   const restaurantsRef = collection(this.firestore, 'restaurants');
   return collectionData(restaurantsRef, { idField: 'id' }) as Observable<any[]>;
 }
+getProducts(): Observable<any[]> {
+  const productsRef = collection(this.firestore, 'products');
+  return collectionData(productsRef, { idField: 'id' }) as Observable<any[]>;
+}
+
 }

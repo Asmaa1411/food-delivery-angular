@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RestaurantCardComponent } from "../../../../shared/components/restaurant-card/restaurant-card.component";
 import { FirebaseService } from '../../../../services/firebase.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-deals-section',
   standalone: true,
-  imports: [CommonModule, RestaurantCardComponent],
+  imports: [CommonModule, RouterModule, RestaurantCardComponent],
   templateUrl: './deals-section.component.html',
   styleUrls: ['./deals-section.component.scss']
 })

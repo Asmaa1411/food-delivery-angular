@@ -21,5 +21,8 @@ export const routes: Routes = [
     path: 'track',
     loadComponent: () => import('./features/track/track.component').then(m => m.TrackComponent),
   },
+  {
+    path: 'restaurants/:id',
+loadComponent: () => import('./features/restaurants/restaurants.component').then(m => m.RestaurantsComponent),  },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
