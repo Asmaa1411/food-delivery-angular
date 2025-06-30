@@ -14,19 +14,19 @@ export class RestaurantOffersComponent {
     {
       image: 'assets/images/offer1.png',
       discount: '-20%',
-      category: 'McDonald’s East London',
+      category: 'Burgerna',
       name: 'First Order Discount'
     },
     {
       image: 'assets/images/offer2.png',
       discount: '-30%',
-      category: 'McDonald’s East London',
+      category: 'Burgerna',
       name: 'Vegan Discount'
     },
     {
       image: 'assets/images/offer3.png',
       discount: '-100%',
-      category: 'McDonald’s East London',
+      category: 'Burgerna',
       name: 'Free ice Cream Offer'
     }
   ];
