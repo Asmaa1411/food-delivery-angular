@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductCardComponent } from '../../../shared/components/product-card/product-card.component';
 import { FirebaseService } from '../../../services/firebase.service';
@@ -20,6 +20,11 @@ ngOnInit(): void {
     this.cards = data;
     console.log(data);
   });
+}
+@Output() productSelected = new EventEmitter<any>();
+
+selectProduct(product: any) {
+  this.productSelected.emit(product);
 }
 
   // burgers = [

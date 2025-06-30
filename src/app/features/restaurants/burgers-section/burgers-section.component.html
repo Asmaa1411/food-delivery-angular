@@ -3,12 +3,14 @@
     <h2 class="section-title mb-4">Burgers</h2>
 
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4" *ngFor="let item of cards">
+      <div class="col-md-6 col-lg-4 d-flex" *ngFor="let product of cards">
         <app-product-card
-          [name]="item.name"
-          [description]="item.description"
-          [price]="item.price"
-          [image]="item.image"
+          class="w-100"
+          [name]="product.name"
+          [description]="product.description"
+          [image]="product.image"
+          [price]="product.price"
+          (add)="selectProduct(product)"
         ></app-product-card>
       </div>
     </div>

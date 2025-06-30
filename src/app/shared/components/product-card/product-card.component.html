@@ -7,7 +7,7 @@
 
   <div class="image-box position-relative ms-3">
     <img [src]="image" alt="Product" class="img-fluid rounded-3" />
-    <button class="plus-btn position-absolute">
+    <button class="plus-btn position-absolute" (click)="add.emit()">
       <img src="assets/images/Plus.png" alt="Add" />
     </button>
   </div>

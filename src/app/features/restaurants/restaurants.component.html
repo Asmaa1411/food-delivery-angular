@@ -1,8 +1,18 @@
 <app-restaurant-banner></app-restaurant-banner>
 <app-restaurant-offers></app-restaurant-offers>
-<app-burgers-section></app-burgers-section>
-<app-fries-section></app-fries-section>
-<app-drinks-section></app-drinks-section>
+
+<ng-container *ngIf="!showOrderingSection">
+  <app-burgers-section (productSelected)="openOrderingSection($event)"></app-burgers-section>
+  <app-fries-section></app-fries-section>
+  <app-drinks-section></app-drinks-section>
+</ng-container>
+
+<app-ordering-section
+  *ngIf="showOrderingSection"
+  [product]="selectedProduct"
+  (close)="closeOrderingSection()"
+></app-ordering-section>
+
 <app-information></app-information>
 <app-location-info></app-location-info>
 <app-reviews-section></app-reviews-section>
